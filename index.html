@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- google font  -->
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+     <!-- dasi ui  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- tailwind  -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- font awsome  -->
+     <script src="https://kit.fontawesome.com/213ba0c6ef.js" crossorigin="anonymous"></script>
+     
+     <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+     </style>
+ 
+     <script>
+         tailwind.config = {
+           theme: {
+             extend: {
+               colors: {
+                 clifford: '#da373d',
+                 button: '#ABEF5F',
+
+               }
+             }
+           }
+         }
+       </script>
+</head>
+<body class="font-manrope p-1">
+
+  <header>
+    <nav class="container mx-auto ">
+        <!-- small device  -->
+        <div class="navbar bg-base-300 shadow-sm">
+            <div class="navbar-start">
+              
+              <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-button p-2 rounded-full "></i>Rainterio</a>
+            </div>
+            <!-- lg deveic  -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="font-bold text-xl"><a>Home</a></li>
+                  <li class="font-bold text-xl"><a>Service</a></li>
+                  <li class="font-bold text-xl"><a>Portfolio</a></li>
+                  <li class="font-bold text-xl"><a>Blog</a></li> 
+                  <li class="font-bold text-xl"><a>Contuct Us</a></li>
+               
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+                
+                <ul class="flex items-baseline gap-4 ">
+                    <li><a href=""><i class="fa-solid fa-cart-shopping bg-white rounded-full p-3 hidden md:block"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass bg-white rounded-full p-3 font-bold hidden md:block"></i></a></li>
+                    <li>
+                        <button class="bg-button px-6 py-2 font-bold rounded-full hidden md:block">
+                              Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full "></i>
+                        </button>
+                    </li>
+                  </ul>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6H4 M20 12H12 M20 18H4"
+                        /> </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-button rounded-sm z-1 mt-3 w-36 p-2 shadow">
+                      <li class="font-bold text-xl"><a>Home</a></li>
+                      <li class="font-bold text-xl"><a>Service</a></li>
+                      <li class="font-bold text-xl"><a>Portfolio</a></li>
+                      <li class="font-bold text-xl"><a>Blog</a></li> 
+                      <li class="font-bold text-xl"><a>Contuct Us</a></li>
+                    </ul>
+                  </div>
+                  
+            </div>
+          </div>
+    </nav>
+   <section class="container mx-auto bg-base-300 shadow-sm  p-10 ">
+    <img class="mx-auto" src="/assets/banner.png" alt="">
+    <div class="text-center my-5">
+        <h1 class="text-3xl md:text-5xl font-extrabold">A barn house of this design has a striking of this design has a striking appearanc</h1>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim mollitia ut praesentium quam veritatis pariatur quis animi autem fugiat atque</p>
+        <button class="bg-button px-6 py-2 font-bold rounded-full mt-3 md:w-2/3"> <a href=""> View Details </a>   <i class="fa-solid fa-arrow-right ml-4 -rotate-45 bg-black text-white p-2 rounded-full "></i></button>
+    </div>
+   </section>
+   <section class="container mx-auto bg-slate-200 shadow-sm p-10 mt-20 ">
+    <div class="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
+        
+     
+        <div>
+            <div class=" text-center md:text-center lg:text-start">
+                <img class="hidden lg:block" src="/assets/Vector.png" alt="">
+
+                <button class="bg-slate-300 px-6 py-2 font-bold rounded-full mt-3 text-start "> <a href=""> <i class="fa-solid fa-arrow-right  bg-slate-100 text-black p-2 rounded-full mr-3"></i> About Us</a> </button>
+             <h1 class="text-5xl font-extrabold mb-3">We design throughful,<br>Iiveable spaces</h1>
+             <p>The banr house capativatse withbr <br> its blend charm and morerd shophistion, <br> feature weathered,sleek metal accents</p>
+            </div>
+
+                  <!-- cards  -->
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2 justify-center items-center">
+            <div class="card card-side bg-base-200 shadow-sm p-2 mt-4">
+                <figure>
+                  <img class="w-20 md:w-14 m-10 p-1"
+                    src="/assets/commercial.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold">Commercial</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo ratione quaerat molestias iste fuga!</p>
+                </div>
+              </div>
+            <div class="card card-side bg-base-200 shadow-sm p-2 mt-4">
+                <figure>
+                  <img class="w-20 md:w-14 m-10 p-2"
+                    src="/assets/residential.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title font-bold">Residential</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo ratione quaerat molestias iste fuga!</p>
+                </div>
+              </div>
+           </div>
+        </div>
+<!-- img  -->
+        <div>
+            <img class="w-full" src="/assets/Rectangle.png" alt="">
+
+        </div>
+    </div>
+   </section>
+  </header>
+  <!-- about clients and members  -->
+   <section class="container mx-auto p-10  bg-slate-200 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+        <div class="text-center bg-white p-3 ">
+            <i class="fa-solid fa-comment text-5xl"></i>
+            <h1 class="text-3xl font-extrabold">235+</h1>
+            <p class="font-semibold">Happy Clients Review</p>
+        </div>
+
+        <div class="text-center bg-white p-3 ">
+            <i class="fa-solid fa-file text-5xl"></i>
+            <h1 class="text-3xl font-extrabold">50+</h1>
+            <p class="font-semibold">Work Departments</p>
+        </div>
+        <div class="text-center bg-white p-3 ">
+            <i class="fa-solid fa-user text-5xl"></i>
+            <h1 class="text-3xl font-extrabold">30k+</h1>
+            <p class="font-semibold">Our Happy Clients</p>
+        </div>
+        <div class="text-center bg-white p-3 ">
+            <i class="fa-solid fa-circle-user text-5xl"></i>
+            <h1 class="text-3xl font-extrabold">307+</h1>
+            <p class="font-semibold">Staff Menber</p>
+        </div>
+    </div>
+   </section>
+   <section class="container mx-auto">
+    <div class="text-center my-5">
+        <button class="bg-slate-300 px-6 py-2 font-bold rounded-full mt-3 text-start "> <a href=""> <i class="fa-solid fa-arrow-right  bg-slate-100 text-black p-2 rounded-full mr-3"></i> How we works ?</a> </button>
+        <h1 class="text-3xl md:text-5xl font-extrabold">Our Works Process</h1>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Enim mollitia ut praesentium quam veritatis pariatur quis animi autem fugiat atque</p> 
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class=" bg-red-300 p-3 rounded-lg">
+           <img src="/assets/concept.png" alt="">
+            <h1 class="text-3xl font-extrabold">Concept</h1>
+            <p class="font-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, odit?</p>
+        </div>
+
+        <div class=" bg-yellow-200 p-3 rounded-lg">
+           <img src="/assets/flow-chart.png" alt="">
+            <h1 class="text-3xl font-extrabold">Design Process</h1>
+            <p class="font-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, accusantium</p>
+        </div>
+        <div class=" bg-green-300 p-3 rounded-lg ">
+            <img src="/assets/vision.png" alt="">
+            <h1 class="text-3xl font-extrabold">Supervision</h1>
+            <p class="font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, illum?</p>
+        </div>
+        <div class="bg-blue-300 rounded-lg  p-3 ">
+            <img src="/assets/budget-planning.png" alt="">
+            <h1 class="text-3xl font-extrabold">Budget Planning</h1>
+            <p class="font-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, iure</p>
+        </div>
+    </div>
+   </section>
+   <section class="container mx-auto">
+    <div class="text-center my-5">
+        <button class="bg-slate-300 px-6 py-2 font-bold rounded-full mt-3 text-start "> <a href=""> <i class="fa-solid fa-arrow-right  bg-slate-100 text-black p-2 rounded-full mr-3"></i> Explore our Latest work ?</a> </button>
+        <h1 class="text-3xl md:text-5xl font-extrabold">Our Latest Portfolio</h1>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Enim mollitia ut praesentium quam veritatis pariatur quis animi autem fugiat atque</p> 
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 p-4">
+        <!-- Card 1 -->
+        <div class="w-full md:flex md:flex-col">
+          <div class="bg-slate-300 p-1 rounded-lg flex justify-center items-center w-full">
+            <img src="/assets/img4.png" alt="Card 1" />
+          </div>
+        </div>
+      
+        <!-- Card 2 (col-span-2) -->
+        <div class="w-full lg:col-span-2">
+          <div class="flex flex-col md:flex-row gap-4 bg-slate-300 justify-center items-center p-4 rounded-lg">
+            <img src="/assets/img1.png" alt="Card 2" class="w-full md:w-1/3 rounded-md" />
+            <div>
+              <h1 class="text-xl font-bold">Commercial 1</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo numquam mollitia nesciunt ab.</p>
+              <button class="bg-button px-6 py-1 font-bold rounded-lg mt-2">
+                View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="w-full md:flex md:flex-col">
+          <div class="bg-slate-300 p-1 rounded-lg flex justify-center items-center w-full">
+            <img src="/assets/img4.png" alt="Card 3" />
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="w-full md:flex md:flex-col">
+          <div class="bg-slate-300 p-1 rounded-lg flex justify-center items-center w-full">
+            <img src="/assets/img4.png" alt="Card 4" />
+          </div>
+        </div>
+      
+        <!-- Card 5 (col-span-2) -->
+        <div class="w-full lg:col-span-2">
+          <div class="flex flex-col md:flex-row gap-4 bg-slate-300 justify-center items-center p-4 rounded-lg">
+            <img src="/assets/img1.png" alt="Card 5" class="w-full md:w-1/3 rounded-md" />
+            <div>
+              <h1 class="text-xl font-bold">Commercial 1</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo numquam mollitia nesciunt ab.</p>
+              <button class="bg-button px-6 py-1 font-bold rounded-lg mt-2">
+                View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full ml-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 6 -->
+        <div class="w-full md:flex md:flex-col">
+          <div class="bg-slate-300 p-1 rounded-lg flex justify-center items-center w-full">
+            <img src="/assets/img4.png" alt="Card 6" />
+          </div>
+        </div>
+      </div>
+   </section>
+   <!-- Articles and news  -->
+
+   <section class="container mx-auto">
+    <div class="text-center my-5">
+        <button class="bg-slate-300 px-6 py-2 font-bold rounded-full mt-3 text-start "> <a href=""> <i class="fa-solid fa-arrow-right  bg-slate-100 text-black p-2 rounded-full mr-3"></i>Rintreo News</a> </button>
+        <h1 class="text-3xl md:text-5xl font-extrabold">Read Our Articles and News</h1>
+        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Enim mollitia ut praesentium quam veritatis pariatur quis animi autem fugiat atque</p> 
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
+
+        <div class="card bg-base-300 shadow-sm flex flex-col md:flex-row lg:flex-col">
+            <figure >
+              <img class="p-2 w-full"
+                src="/assets/article1.png"
+                alt="Article1" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">How to choose the furniture <br> right of your home.</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions justify-start">
+                <button class="bg-button px-6 py-1 font-bold rounded-lg mt-2">
+                    View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full ml-2"></i>
+                  </button>
+              </div>
+            </div>
+          </div>
+
+        <div class="card bg-base-300 shadow-sm flex flex-col md:flex-row lg:flex-col">
+            <figure >
+              <img class="p-2 w-full"
+                src="/assets/article1.png"
+                alt="Article1" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">How to choose the furniture <br> right of your home.</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions justify-start">
+                <button class="bg-button px-6 py-1 font-bold rounded-lg mt-2">
+                    View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full ml-2"></i>
+                  </button>
+              </div>
+            </div>
+          </div>
+
+        <div class="card bg-base-300 shadow-sm flex flex-col md:flex-row lg:flex-col">
+            <figure >
+              <img class="p-2 w-full"
+                src="/assets/article1.png"
+                alt="Article1" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">How to choose the furniture <br> right of your home.</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <div class="card-actions justify-start">
+                <button class="bg-button px-6 py-1 font-bold rounded-lg mt-2">
+                    View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full ml-2"></i>
+                  </button>
+              </div>
+            </div>
+          </div>
+    </div>
+   </section>
+
+   <section class="container mx-auto mt-4">
+    <div class="relative">
+        <img class="mx-auto" src="/assets/bg.jpg" alt="">
+        <div class="absolute inset-0 mt-4">
+            <div class="text-center my-5">
+                <button class="bg-slate-300 px-6 py-2 font-bold rounded-full mt-3 text-start "> <a href=""> <i class="fa-solid fa-arrow-right  bg-slate-100 text-black p-2 rounded-full mr-3"></i>Let's content</a> </button>
+                <h1 class="text-3xl md:text-5xl font-extrabold">Let's Discuss Next Project</h1>
+                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Enim mollitia ut praesentium quam veritatis pariatur quis animi autem fugiat atque</p> 
+            </div>
+            <div>
+                <form class="max-w-xl mx-auto p-6 shadow-lg rounded-lg space-y-4">
+                    <!-- First & Last Name -->
+                    <div class="grid grid-cols-2 md:grid-cols-1 gap-4">
+                      <div>
+                        <input type="text" placeholder="First Name" class="input input-bordered w-full" />
+                      </div>
+                      <div>
+                        <input type="text" placeholder="Last Name" class="input input-bordered w-full" />
+                      </div>
+                    </div>
+                  
+                    <!-- Phone Number & Email -->
+                    <div class="grid grid-cols-2 md:grid-cols-1 gap-4">
+                      <div>
+                        <input type="tel" placeholder="Phone Number" class="input input-bordered w-full" />
+                      </div>
+                      <div>
+                        <input type="email"  placeholder="Email" class="input input-bordered w-full " />
+                      </div>
+                    </div>
+                  
+                    <!-- Message -->
+                    <div>
+                      <textarea class="w-full" rows="4" placeholder="Your message"></textarea>
+                    
+                    <!-- Submit Button -->
+                    <button class="bg-button px-6 py-1 font-bold rounded-lg mt-2 w-full">
+                        Send Mail <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full ml-2"></i>
+                    </button>
+                    </div>
+                  </form>                
+            </div>
+        </div>
+    </div> 
+   </section>
+   <footer class="container mx-auto bg-black text-white">
+    <div class="text-center my-5 p-5">
+        <button class=" px-6 py-2 font-bold rounded-full mt-3 text-start "> <a href=""> <i class="fa-solid fa-arrow-right   text-black p-2 rounded-full bg-button -rotate-45 mr-3"></i>Rainterio</a> </button>
+        <p class="mt-1 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Enim mollitia ut praesentium quam veritatis pariatur quis animi autem fugiat atque</p> 
+   
+    <div class="grid grid-cols-1 md:grid-cols-6">
+        <p><a href="">Home</a></p>
+        <p><a href="">Services</a></p>
+        <p><a href=""> Portfolio</a></p>
+        <p><a href=""> Blogs</a></p>
+        <p><a href="">Contuct Us</a></p>
+    </div>
+    <div class="text-center">
+        <button class="bg-button px-6 py-1 font-bold text-black rounded-lg mt-4">
+            Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full ml-2"></i>
+        </button>
+    </div>
+</div>
+
+</footer> 
+</body>
+
+</html>
